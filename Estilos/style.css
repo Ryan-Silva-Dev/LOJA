@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@media screen {
+    *{
+ 
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    }
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-color: rgba(0, 0, 0, 0.178);
+
+        font-size: 1em;
+        width: 100vw;
+        height: 100vh;
+        
+       
+
+
+
+    }
+    ::-webkit-scrollbar { display: none; }
+
+    main>header{
+        background-color: white;
+
+        padding: 20px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    main>header>h1{
+        flex: 0 0 200px;
+        
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    main>header>a{
+        flex: 0 0 250px;
+        
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    main>header>a:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        
+    }
+
+
+    #categorias{
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    
+    }
+
+    .opcao{
+        
+        background-color: black;
+        color: white;
+        border: 3px solid rgb(0, 0, 0);
+
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+
+        flex: 0 0 150px;
+        text-align: center;
+
+        transition: background-color 1s ease-in-out;
+    }
+    .opcao:hover{
+        background-color: red;
+        color: rgb(255, 255, 255);
+        border: 3px solid black;
+        transition: 0.7s;
+        transform: translate(0px, -5px);
+        border-radius: 20px;
+        
+    }
+    
+
+    #info h2{
+        background-color: red;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    #produtos{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+        margin: 10px;
+    }
+    .pag_produtos{
+        text-decoration: none;
+    }
+
+    .produto{
+        background-color: white;
+        display: flex;
+        flex-flow: column nowrap;
+
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+    .frescurinha{
+        background-color: black;
+        color: rgb(0, 255, 0);
+        border-radius: 10px 10px 0px 0px;
+        text-align: right;
+        padding: 0px 10px;
+        
+        
+    }
+    .imagem_nome_preços{
+        display: flex;
+        flex-flow: row;
+    }
+    .imagem_produto{
+        width: 228px;
+        height: 228px;
+
+        display: flex;
+    }
+    .nome_preço{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        padding: 10px;
+        text-align: left;
+    }
+    .nome_produto{
+        display: flex;
+        color: black;
+        font-weight: bolder;
+        
+    }
+    .preço_produto{
+        display: flex;
+        color: green;
+        font-weight: bold;
+
+    }
+    footer{
+        background-color: rgb(73, 73, 73);
+        padding: 20px;
+    }
+    footer h1{
+        text-align: center;
+    }
+    #lojas{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .inspiraçoes{
+        text-align: center;
+        align-items: center;
+        
+    }
+    .inspiraçoes_img{
+        padding: 10px;
+        
+        
+
+    }
+    #eu{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .eu{
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    
+    }
+
