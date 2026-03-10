@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@media screen and (max-width: 600px)  {
+    #produtos{
+        display: grid;
+        grid-template-columns: subgrid;
+        
+        margin: 10px;
+    }
+}

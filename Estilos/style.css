@@ -25,7 +25,25 @@
     }
     ::-webkit-scrollbar { display: none; }
 
-    main>header{
+    #suporte{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        
+        
+    }
+    #suporte a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+    }
+    #suporte a:hover{
+        color: red;
+        transition: 0.7s;
+    }
+
+    main>header>div{
         background-color: white;
 
         padding: 20px;
@@ -37,14 +55,14 @@
         
     }
 
-    main>header>h1{
+    main>header>div>h1{
         flex: 0 0 200px;
         
         border: 3px solid black;
         border-radius: 10px;
         padding: 10px;
     }
-    main>header>a{
+    main>header>div>a{
         flex: 0 0 250px;
         
         border: 3px solid black;
@@ -56,9 +74,10 @@
         text-align: center;
         
     }
-    main>header>a:hover{
-        background-color: rgb(0, 0, 0);
+    main>header>div>a:hover{
+        background-color: rgb(255, 0, 0);
         color: white;
+        transition: 0.7s;
         
     }
 
@@ -106,6 +125,12 @@
         text-align: center;
         
     }
+    /*#info2{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }*/
     #produtos{
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -136,13 +161,21 @@
     }
     .imagem_nome_preços{
         display: flex;
-        flex-flow: row;
+        flex-flow: row nowrap;
     }
     .imagem_produto{
-        width: 228px;
+        
         height: 228px;
 
         display: flex;
+        
+        
+        
+    }
+
+    .IMAGEM{
+        max-width: 228px;
+        max-height: 228px;
     }
     .nome_preço{
         display: flex;
