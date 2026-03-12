@@ -1,0 +1,48 @@
+@media screen and (max-width: 700px) {
+    /* Menu lado a lado no celular */
+    main > header > div {
+        display: flex;
+        flex-direction: row; /* Força ficar um do lado do outro */
+        justify-content: space-between;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    main > header > div > a {
+        flex: 1; /* Faz os dois botões terem tamanhos iguais */
+        padding: 10px;
+        font-size: 0.8em;
+        min-width: 0; /* Evita que o texto quebre o botão */
+    }
+
+    /* SSD cobrindo o topo cinza no celular */
+    #catalogo {
+        width: 100%;
+        min-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nome_produto {
+        width: 100%; /* Estica no topo do fundo cinza */
+        margin: 0;
+    }
+
+    #produto {
+        flex-direction: column; /* Foto em cima do preço no celular */
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    #foto_produto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #especificaçoes_produto {
+        width: 100%;
+        max-width: 350px;
+    }
+}
