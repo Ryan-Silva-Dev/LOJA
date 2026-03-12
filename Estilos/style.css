@@ -74,7 +74,7 @@
         text-align: center;
         
     }
-    main>header>div>a:hover{
+    #login:hover{
         background-color: rgb(255, 0, 0);
         color: white;
         transition: 0.7s;

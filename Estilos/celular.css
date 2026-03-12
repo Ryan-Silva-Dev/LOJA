@@ -1,6 +1,38 @@
 @charset "utf-8";
 
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 700px)  {
+
+    main>header>div{
+        background-color: rgb(255, 255, 255);
+
+        padding: 20px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    main>header>div>a{
+        flex: 0 0 180px;
+        
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        font-size: 0.8em;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    #login:hover{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        transition: 0.7s;
+        
+    }
     #produtos{
         display: grid;
         grid-template-columns: subgrid;
